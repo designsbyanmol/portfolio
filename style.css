@@ -1,137 +1,151 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("assets/fonts/Raleway/Raleway.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-italic";
+  src: url("assets/fonts/Raleway/Raleway-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  font-family: "Raleway";
+  scroll-behavior: smooth;
+}
 
-  .dba-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
+.dba-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 15;
+}
 
-  .dba-header {
-    background: #111;
-    color: #fff;
-    padding: 1rem 0;
-  }
+.dba-header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+}
 
-  .dba-header .dba-logo {
-    font-size: 1.5rem;
-  }
+.dba-header .dba-logo {
+  font-size: 1.5rem;
+}
 
-  .dba-nav ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-  }
+.dba-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
 
-  .dba-nav a {
-    color: #fff;
-    text-decoration: none;
-  }
+.dba-nav a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  .dba-hero {
-    background: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+.dba-hero {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  .dba-hero-text {
-    max-width: 600px;
-  }
+.dba-hero-text {
+  max-width: 600px;
+}
 
-  .dba-cta-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: #111;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
+.dba-cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
 
-  .dba-cta-btn:hover {
-    background: #333;
-  }
+.dba-cta-btn:hover {
+  background: #333;
+}
 
-  .dba-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+.dba-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .dba-skill-list li {
-    margin: 0.5rem 0;
-  }
+.dba-skill-list li {
+  margin: 0.5rem 0;
+}
 
-  .dba-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
-  }
+.dba-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
 
-  .dba-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
+.dba-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
 
-  .dba-card:hover {
-    transform: scale(1.03);
-  }
+.dba-card:hover {
+  transform: scale(1.03);
+}
 
-  .dba-testimonials blockquote {
-    border-left: 4px solid #111;
-    padding-left: 1rem;
-    margin: 1rem 0;
-    font-style: italic;
-  }
+.dba-testimonials blockquote {
+  border-left: 4px solid #111;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
 
-  .dba-contact-form input,
-  .dba-contact-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+.dba-contact-form input,
+.dba-contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  .dba-contact-form button {
-    padding: 0.75rem 1.5rem;
-    background: #111;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.dba-contact-form button {
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  .dba-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
+.dba-footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
 
-  .dba-footer a {
-    color: #fff;
-    margin: 0 0.5rem;
-  }
+.dba-footer a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
 
-  .dba-search {
-    margin-bottom: 1rem;
-  }
+.dba-search {
+  margin-bottom: 1rem;
+}
 
-  .dba-search input {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+.dba-search input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
