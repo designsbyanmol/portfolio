@@ -1,5 +1,7 @@
 // Smooth scroll
 $('.dba-nav a').on('click', function(e) {
+  $('.dba-nav a').removeClass('active');
+  $(this).addClass('active');
     if (this.hash !== '') {
       e.preventDefault();
       const hash = this.hash;
