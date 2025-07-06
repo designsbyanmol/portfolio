@@ -123,7 +123,7 @@ svg path {
   stroke: var(--pc);
 }
 
-.dba-nav ul {
+#dba-header .dba-nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -593,7 +593,7 @@ svg path {
     transition: all 0.3s linear;
   }
 
-  .dba-header .dba-container nav ul {
+  #dba-header .dba-container nav ul {
     flex-direction: column;
   }
 
