@@ -12,11 +12,11 @@ $('.dba-nav a').on('click', function(e) {
   });
 
   const dbaSkills = [
-    "HTML, CSS, jQuery",
-    "Figma Layouts & Prototypes",
-    "WordPress, Shopify, HubSpot",
-    "UX, SEO, Branding",
-    "ClickUp, Trello, Jira"
+    "HTML", "CSS", "jQuery",
+    "Figma Layouts", "Figma Prototypes",
+    "WordPress", "Shopify", "HubSpot",
+    "UX", "SEO", "Branding",
+    "ClickUp", "Trello", "Jira"
   ];
 
   const dbaProjects = [
@@ -49,13 +49,6 @@ $('.dba-nav a').on('click', function(e) {
       quote: "Turned our basic concept into a beautiful, branded website in record time.",
       client: "– WordPress Client"
     }
-  ];
-
-  const dbaContactFields = [
-    { type: "text", placeholder: "Your Name", required: true },
-    { type: "email", placeholder: "Your Email", required: true },
-    { type: "textarea", placeholder: "Tell me about your project..." },
-    { type: "submit", text: "Send Message" }
   ];
 
   function renderProjects(filter = '') {
@@ -99,15 +92,28 @@ $('.dba-nav a').on('click', function(e) {
       $('#dba-testimonial-list').append(block);
     });
 
-    dbaContactFields.forEach(field => {
-      let input;
-      if (field.type === "textarea") {
-        input = `<textarea placeholder="${field.placeholder}"></textarea>`;
-      } else if (field.type === "submit") {
-        input = `<button type="submit">${field.text}</button>`;
-      } else {
-        input = `<input type="${field.type}" placeholder="${field.placeholder}" ${field.required ? 'required' : ''} />`;
-      }
-      $('#dba-contact-form').append(input);
+    // Color change effect
+
+ $('#about p').each(function () {
+    const $original = $(this);
+    const text = $original.text().trim();
+    const words = text.split(/\s+/);
+
+    // Create overlay container
+    const $overlay = $('<div class="overlay"></div>');
+    $original.append($overlay);
+
+    // Add each word as a span to the overlay
+    $.each(words, function (i, word) {
+      const $span = $('<span>').text(word + ' ');
+      $overlay.append($span);
+
+      setTimeout(() => {
+        $span.css('opacity', 1);
+      }, i * 400); // delay for each word
     });
+  });
+
+
+
   });

@@ -4,93 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Designs By Anmol</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="dba">
     <header class="dba-header">
-        <div class="dba-container">
-          <h1 class="dba-logo">Designs by <span>Anmol</span></h1>
-          <nav class="dba-nav">
-            <ul>
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+      <div class="dba-container">
+        <h1 class="dba-logo">Designs by <span>Anmol</span></h1>
+        <nav class="dba-nav">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="dba-hero">
+      <div class="dba-container">
+        <div class="dba-hero-text">
+          <h2>Crafting Beautiful & Functional Web Interfaces</h2>
+          <p>
+            Elevating websites through stunning user interfaces, intelligent
+            user experiences, and seamless integration of modern technologies.
+            We craft visually captivating designs that not only engage users but
+            also enhance functionality and performance.
+          </p>
+          <a href="#contact" class="dba-cta-btn">Let’s Work Together</a>
         </div>
-      </header>
-    
-      <!-- Hero Banner -->
-      <section id="home" class="dba-hero">
-        <div class="dba-container">
-          <div class="dba-hero-text">
-            <h2>Crafting Beautiful & Functional Web Interfaces</h2>
-            <p>Elevating websites with stunning UI, smart UX, and seamless integration.</p>
-            <a href="#contact" class="dba-cta-btn">Let’s Work Together</a>
-          </div>
-          <div class="dba-hero-img">
-            <img src="https://cdn.jsdelivr.net/gh/designsbyanmol/portfolio@main/assets/images/banner-portfolio.webp" alt="Designer at Work" />
-          </div>
+        <div class="dba-hero-img">
+          <img
+            src="https://cdn.jsdelivr.net/gh/designsbyanmol/portfolio@main/assets/images/banner-portfolio.webp"
+            alt="Designer at Work"
+          />
         </div>
-      </section>
-    
-      <!-- Skills -->
-      <section id="skills" class="dba-section">
-        <div class="dba-container">
-          <h2>Skills & Expertise</h2>
-          <ul id="dba-skill-list" class="dba-skill-list"></ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="dba-section">
+      <div class="dba-container">
+        <h2>Skills & Expertise</h2>
+        <ul id="dba-skill-list" class="dba-skill-list"></ul>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="dba-section">
+      <div class="dba-container">
+        <h2>Works & Projects</h2>
+        <div class="dba-search">
+          <input
+            type="text"
+            id="dba-search-input"
+            placeholder="Search by title or platform..."
+          />
         </div>
-      </section>
-    
-      <!-- Portfolio -->
-      <section id="portfolio" class="dba-section">
-        <div class="dba-container">
-          <h2>Works & Projects</h2>
-          <div class="dba-search">
-            <input type="text" id="dba-search-input" placeholder="Search by title or platform..." />
-          </div>
-          <div id="dba-project-list" class="dba-grid"></div>
-        </div>
-      </section>
-    
-      <!-- About Me -->
-      <section id="about" class="dba-section">
-        <div class="dba-container">
-          <h2>The Designer Behind the Pixels</h2>
-          <p>I’m Anmol, a passionate web designer with 5+ years of experience in software companies. I specialize in HTML/CSS/jQuery, layout design in Figma, and development on WordPress, Shopify, and HubSpot platforms. I take pride in understanding UX, SEO, and branding standards, while also mastering tools like ClickUp and Trello.</p>
-        </div>
-      </section>
-    
-      <!-- Testimonials -->
-      <section id="testimonials" class="dba-section">
-        <div class="dba-container">
-          <h2>What Clients Say?</h2>
-          <div id="dba-testimonial-list" class="dba-testimonials"></div>
-        </div>
-      </section>
-    
-      <!-- Contact -->
-      <section id="contact" class="dba-section">
-        <div class="dba-container">
+        <div id="dba-project-list" class="dba-grid"></div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="dba-section">
+      <div class="dba-container">
+        <h2>The Designer Behind the Pixels</h2>
+        <p>
+          I’m Anmol, a passionate web designer with 5+ years of experience in
+          software companies. I specialize in HTML/CSS/jQuery, layout design in
+          Figma, and development on WordPress, Shopify, and HubSpot platforms. I
+          take pride in understanding UX, SEO, and branding standards, while
+          also mastering tools like ClickUp and Trello.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="dba-section">
+      <div class="dba-container">
+        <h2>What Clients Say?</h2>
+        <div id="dba-testimonial-list" class="dba-testimonials"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="dba-section">
+      <div class="dba-container">
+        <div class="dba-container-in">
           <h2>Let’s Build Something Great Together</h2>
-          <form id="dba-contact-form" class="dba-contact-form"></form>
+          <p>
+            Please fill out the form below to help us understand your
+            requirements better. The information you provide will be used to
+            tailor our services to your specific needs. All data is kept
+            confidential and will only be used for communication and project
+            purposes.
+          </p>
         </div>
-      </section>
-    
-      <!-- Footer -->
-      <footer class="dba-footer">
-        <div class="dba-container">
-          <p>© Anmol 2025. All rights reserved.</p>
-          <div class="dba-socials">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Behance</a>
-          </div>
+        <div class="dba-form-wrap">
+          <iframe
+            data-tally-src="https://tally.so/embed/3j4a71?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="492"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Contact Form"
+          ></iframe>
+          <script>
+            var d = document,
+              w = "https://tally.so/widgets/embed.js",
+              v = function () {
+                "undefined" != typeof Tally
+                  ? Tally.loadEmbeds()
+                  : d
+                      .querySelectorAll("iframe[data-tally-src]:not([src])")
+                      .forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                      });
+              };
+            if ("undefined" != typeof Tally) v();
+            else if (d.querySelector('script[src="' + w + '"]') == null) {
+              var s = d.createElement("script");
+              (s.src = w),
+                (s.onload = v),
+                (s.onerror = v),
+                d.body.appendChild(s);
+            }
+          </script>
         </div>
-      </footer>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dba-footer">
+      <div class="dba-container">
+        <p>© Anmol 2025. All rights reserved.</p>
+        <div class="dba-socials">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script></script>
     <script src="script.js"></script>
   </body>
 </html>
