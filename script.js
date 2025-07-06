@@ -121,11 +121,13 @@ $(document).ready(function () {
     const linkedinIcon = data.find(icon => icon.name === 'linkedin');
     const gmailIcon = data.find(icon => icon.name === 'gmail');
     const menuIcon = data.find(icon => icon.name === 'menu');
+    const logoIcon = data.find(icon => icon.name === 'logo');
 
     $('.dba_f-insta').html(instaIcon.svg);
     $('.dba_f-linkedin').html(linkedinIcon.svg);
     $('.dba_f-gmail').html(gmailIcon.svg);
     $('.dba-h_menu-icon').html(menuIcon.svg);
+    $('.dba-logo i').html(logoIcon.svg);
   });
 
   $(document).on('click', '.dba-h_menu-icon', function () {
