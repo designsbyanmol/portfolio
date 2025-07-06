@@ -110,7 +110,7 @@ $('.dba-nav a').on('click', function(e) {
 
       setTimeout(() => {
         $span.css('opacity', 1);
-      }, i * 400); // delay for each word
+      }, i * 200); // delay for each word
     });
   });
 
@@ -120,10 +120,24 @@ $.getJSON('https://raw.githubusercontent.com/designsbyanmol/portfolio/main/icons
     const instaIcon = data.find(icon => icon.name === 'instagram');
     const linkedinIcon = data.find(icon => icon.name === 'linkedin');
     const gmailIcon = data.find(icon => icon.name === 'gmail');
+    const menuIcon = data.find(icon => icon.name === 'menu');
 
     $('.dba_f-insta').html(instaIcon.svg);
     $('.dba_f-linkedin').html(linkedinIcon.svg);
     $('.dba_f-gmail').html(gmailIcon.svg);
+    $('.dba-h_menu-icon').html(menuIcon.svg);
+  });
+
+  $(document).on('click', '.dba-h_menu-icon', function() {
+    $('.dba-nav').toggleClass('active-nav');
+  });
+  $(document).on('click', '.dba-nav a', function() {
+    $('.dba-nav').removeClass('active-nav');
+  });
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.dba-nav, .dba-h_menu-icon').length) {
+      $('.dba-nav').removeClass('active-nav');
+    }
   });
 
   });

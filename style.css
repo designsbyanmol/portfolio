@@ -69,6 +69,10 @@
   color: var(--tc);
 }
 
+svg path {
+  stroke: var(--bc);
+}
+
 .dba-container {
   width: 100%;
   max-width: 1180px;
@@ -85,10 +89,10 @@
 }
 
 .dba-header .dba-container {
-  padding: 15px 0;
+  padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
   background: var(--lwc);
@@ -105,6 +109,18 @@
 .dba-header .dba-logo {
   font-size: 16px;
   margin: 0;
+}
+
+.dba-h_menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 0;
+  display: none;
+  transition: all 0.2s linear;
+}
+
+.dba-h_menu-icon:hover path {
+  stroke: var(--pc);
 }
 
 .dba-nav ul {
@@ -229,6 +245,14 @@
   font-weight: 600;
   margin: 0;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+#skills ul li:hover {
+    background: transparent;
+    border: none;
+    color: var(--wc);
+    cursor: default;
 }
 
 #skills ul li:after {
@@ -363,6 +387,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  padding-bottom: 8rem;
 }
 
 #about .dba-container h2 {
@@ -461,7 +486,15 @@
 
 .dba-footer a {
   color: var(--lc);
-  margin: 0 0.5rem;
+  margin: 0 3px;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: var(--lwc);
+  transition: all 0.3s linear;
 }
 
 .dba-footer .dba-container {
@@ -480,15 +513,16 @@
 }
 
 .dba-footer a svg {
-  height: 24px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
 }
 
 .dba-footer a svg path {
-  stroke: var(--wc);
+  stroke: var(--bc);
 }
-.dba-footer a:hover svg path {
-  stroke: var(--sc);
+
+.dba-footer a:hover {
+  scale: 1.1;
 }
 
 .dba-search {
@@ -524,11 +558,82 @@
   }
 
   #contact .dba-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 
   #contact .dba-form-wrap {
     margin: 0 0 40px;
     max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dba-container {
+    padding: 2rem 15px;
+  }
+  .dba-h_menu-icon {
+    display: inline-block;
+  }
+
+  .dba-header .dba-container nav {
+    position: absolute;
+    border: none;
+    left: 15px;
+    padding: 15px;
+    right: 15px;
+    background: var(--wc);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--lbc);
+    top: 100%;
+    transform: translateY(-50px);
+    z-index: -99999;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+
+  .dba-header .dba-container nav ul {
+    flex-direction: column;
+  }
+
+  .dba-header .dba-container {
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .dba-header .dba-container nav.active-nav {
+    transform: translateY(-0);
+    z-index: 1;
+    height: auto;
+    opacity: 1;
+  }
+
+  #about .dba-container {
+    gap: 20px;
+    padding: 40px 15px 80px;
+  }
+
+  #about .dba-container h2 {
+    padding: 0;
+    font-size: 44px;
+  }
+
+  #about p {
+    font-size: 18px;
+  }
+
+  #contact .dba-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #contact .dba-container-in {
+    padding: 30px 0 10px;
+  }
+
+  #contact .dba-form-wrap {
+    margin: 0 0 80px;
+    max-width: unset;
   }
 }
