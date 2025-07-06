@@ -114,6 +114,16 @@ $('.dba-nav a').on('click', function(e) {
     });
   });
 
+// Fetch json
 
+$.getJSON('https://raw.githubusercontent.com/designsbyanmol/portfolio/main/icons.json', function(data) {
+    const instaIcon = data.find(icon => icon.name === 'instagram');
+    const linkedinIcon = data.find(icon => icon.name === 'linkedin');
+    const gmailIcon = data.find(icon => icon.name === 'gmail');
+
+    $('.dba_f-insta').html(instaIcon.svg);
+    $('.dba_f-linkedin').html(linkedinIcon.svg);
+    $('.dba_f-gmail').html(gmailIcon.svg);
+  });
 
   });

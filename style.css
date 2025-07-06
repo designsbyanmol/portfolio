@@ -465,16 +465,28 @@
 }
 
 .dba-footer .dba-container {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dba-footer p {
-    color: var(--wc);
-    font-family: monospace;
-    line-height: 1.5;
+  color: var(--wc);
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+.dba-footer a svg {
+  height: 24px;
+  width: 24px;
+}
+
+.dba-footer a svg path {
+  fill: var(--wc);
+}
+.dba-footer a:hover svg path {
+  fill: var(--pc);
 }
 
 .dba-search {
