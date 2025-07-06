@@ -456,7 +456,7 @@
   background: var(--bc);
   color: var(--wc);
   text-align: center;
-  padding: 1rem 15px;
+  padding: 2rem 15px;
 }
 
 .dba-footer a {
@@ -468,6 +468,8 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
 }
 
@@ -483,10 +485,10 @@
 }
 
 .dba-footer a svg path {
-  fill: var(--wc);
+  stroke: var(--wc);
 }
 .dba-footer a:hover svg path {
-  fill: var(--pc);
+  stroke: var(--sc);
 }
 
 .dba-search {
