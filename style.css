@@ -13,11 +13,11 @@
 }
 
 :root {
-  --pc: #c95878;
-  --lpc: #c9587850;
-  --sc: #e8aa58;
-  --lsc: #e8aa5821;
-  --lc: #81c958;
+  --pc: #9779df;
+  --lpc: #9779df50;
+  --sc: #fbc2eb;
+  --lsc: #fbc2eb21;
+  --lc: #fda085;
   --lwc: #ffffffec;
   --wc: #fff;
   --lbc: #24203810;
@@ -201,7 +201,7 @@
   bottom: 0;
   width: 20px;
   height: 3px;
-  background: red;
+  background: var(--pc);
 }
 
 #skills ul {
@@ -378,7 +378,7 @@
   left: 5px;
   height: 50%;
   border-radius: 0;
-  background: var(--pcg);
+  background: var(--gradient-2);
   z-index: -1;
   opacity: 0.8;
 }
@@ -441,7 +441,7 @@
   right: 0;
   width: auto;
   top: 0;
-  background: var(--sc);
+  background: var(--pc);
 }
 
 #contact .dba-form-wrap {
@@ -453,15 +453,28 @@
 }
 
 .dba-footer {
-  background: var(--tc);
-  color: white;
+  background: var(--bc);
+  color: var(--wc);
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 15px;
 }
 
 .dba-footer a {
-  color: var(--wc);
+  color: var(--lc);
   margin: 0 0.5rem;
+}
+
+.dba-footer .dba-container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dba-footer p {
+    color: var(--wc);
+    font-family: monospace;
+    line-height: 1.5;
 }
 
 .dba-search {
